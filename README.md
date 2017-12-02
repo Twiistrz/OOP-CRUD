@@ -1,6 +1,45 @@
 # crud-oop
 A simple basic PHP OOP Create, Read, Update and Delete.
 
+### Global Configuration File
+You can find this configuration in `core/init.php`.
+```php
+// Global Configuration
+$GLOBALS['config'] = array
+(
+    'development' => array
+    (
+        // Set this true if you want to display errors.
+        'debug' => true
+    ),
+    'mysql' => array
+    (
+        // Database Host
+        'host' => '127.0.0.1',
+        // Database Username
+        'user' => 'root',
+        // Database Password
+        'pass' => '',
+        // Database Name
+        'name' => 'crud'
+    ),
+    'remember' => array
+    (
+        // Remember me cookie name.
+        'cookie_name'   => 'c_hash',
+        // Cookie expiration in seconds.
+        'cookie_expiry' => 604800
+    ),
+    'session' => array
+    (
+        // Login session name.
+        'session_name' => 'c_user',
+        // Globa token session name.
+        'token_name'   => 'c_token'
+    )
+);
+```
+
 ### Class File Template
 ```php
 <?php
