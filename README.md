@@ -1,7 +1,7 @@
-# crud-oop
+# OOP Create, Read, Update and Delete
 A simple basic PHP OOP Create, Read, Update and Delete.
 
-### Global Configuration File
+## Global Configuration File
 You can find this configuration in `core/init.php`.
 ```php
 // Global Configuration
@@ -40,7 +40,8 @@ $GLOBALS['config'] = array
 );
 ```
 
-### Class File Template
+## Class File Template
+Save all class file in `classes` folder.
 ```php
 <?php
 //
