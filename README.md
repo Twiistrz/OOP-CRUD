@@ -13,7 +13,7 @@ Default files `classes/Config.php`, `classes/Cookie.php`, `classes/Session.php`,
 - [x] Update Data
 - [x] Select Data
 - [x] Delete Data
-- [] Upload Images
+- [ ] Upload Images
 
 ## Global Configuration File
 You can find this configuration in `core/init.php`.
