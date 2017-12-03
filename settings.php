@@ -12,7 +12,7 @@ require_once 'views/header.php';
             <div class="col-md-6">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Settings</h4>
+                        <h4 class="title">Profile</h4>
                         <p class="category">Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="content">
@@ -62,7 +62,7 @@ require_once 'views/header.php';
             <div class="col-md-6">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Settings</h4>
+                        <h4 class="title">Change Password</h4>
                         <p class="category">Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="content">
