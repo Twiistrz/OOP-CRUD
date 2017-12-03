@@ -3,52 +3,56 @@ require_once 'core/init.php';
 require_once 'views/header.php';
 ?>
 <div class="wrapper">
-    <?php require_once 'views/sidebar.php'; ?>
+    <div class="content">
+        <div class="row">
 
-    <div class="main-panel">
-        <?php require_once 'views/navbar.php'; ?>
+            <div class="col-md-4 col-md-offset-4">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Sign up</h4>
+                    </div><!-- ./header -->
+                    <div class="content">
+                        <form action="register.php" method="post">
+                            <div class="row">
 
-        <div class="content">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="header">
-                            <h4 class="title">Register</h4>
-                            <p class="category">Lorem ipsum dolor sit amet, consectetur.</p>
-                        </div>
-                        <div class="content">
-                            <form action="register.php" method="post">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="username">Username</label>
-                                            <input type="text" id="username" class="form-control" value="" placeholder="Username">
-                                        </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" id="username" class="form-control" value="" placeholder="Pick a Username">
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" id="email" class="form-control" value="" placeholder="example@website.com">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="password">Password</label>
-                                            <input type="password" id="password" class="form-control" placeholder="Password">
-                                        </div>
+
+                            </div><!-- ./row -->
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" id="email" class="form-control" value="" placeholder="you@example.com">
                                     </div>
                                 </div>
-                                <button class="btn btn-info btn-fill btn-block" type="submit">Register</button>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
-                    </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" class="form-control" placeholder="Create a password">
+                                    </div>
+                                </div>
+
+                            </div><!-- ./row -->
+                            <button class="btn btn-info btn-fill btn-block" type="submit">Register</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div><!-- ./content -->
+                </div><!-- ./card -->
+                <div class="container-fluid">
+                    <p class="copyright text-center text-gray">
+                        <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <b>Twiistrz</b>
+                    </p><!-- ./copyright -->
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<?php
-require_once 'views/footer.php';
+
+        </div><!-- ./row -->
+    </div><!-- ./content -->
+</div><!-- ./wrapper -->
+<?php require_once 'views/footer.php'; ?>
