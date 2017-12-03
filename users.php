@@ -17,7 +17,7 @@ require_once 'views/header.php';
                             <p class="category">Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="content">
-                            <form action="post">
+                            <form action="users.php?update&id=#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -82,7 +82,7 @@ require_once 'views/header.php';
                             <p class="category">Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="content">
-                            <form action="post">
+                            <form action="users.php?add" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -143,7 +143,7 @@ require_once 'views/header.php';
                 <div class="col-md-12">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">Users<a href="roles.php?add" class="btn btn-info pull-right">+ Add User</a></h4>
+                            <h4 class="title">Users<a href="users.php?add" class="btn btn-info pull-right">+ Add User</a></h4>
                             <p class="category">Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="content table-responsive table-full-width">
