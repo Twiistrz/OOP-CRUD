@@ -9,6 +9,7 @@ $GLOBALS['config'] = array
         // Set this true if you want to display errors.
         'debug' => true
     ),
+
     'mysql' => array
     (
         // Database Host
@@ -20,6 +21,7 @@ $GLOBALS['config'] = array
         // Database Name
         'name' => 'crud'
     ),
+
     'remember' => array
     (
         // Remember me cookie name.
@@ -27,6 +29,7 @@ $GLOBALS['config'] = array
         // Cookie expiration in seconds.
         'cookie_expiry' => 604800
     ),
+
     'session' => array
     (
         // Login session name.
@@ -37,13 +40,16 @@ $GLOBALS['config'] = array
 );
 
 // Autoload classes when called.
-spl_autoload_register (
-    function ($class) {
+spl_autoload_register
+(
+    function ($class)
+    {
         require_once "classes/{$class}.php";
     }
 );
 
-if (Config::get('development/debug')) {
+if (Config::get('development/debug'))
+{
     // Debug you can add your own file log here.
     ini_set ('error_prepend_string', "<code>");
     ini_set ('error_append_string', "</code>");
@@ -51,7 +57,9 @@ if (Config::get('development/debug')) {
     ini_set ('display_startup_errors', 1);
     error_reporting (E_ALL);
 }
-else {
+
+else
+{
     error_reporting (0);
 }
 
