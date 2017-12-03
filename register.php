@@ -9,8 +9,9 @@ require_once 'views/header.php';
             <div class="col-md-4 col-md-offset-4">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Sign up</h4>
+                        <h3 class="title text-center">Sign up</h3>
                     </div><!-- ./header -->
+                    <hr />
                     <div class="content">
                         <form action="register.php" method="post">
                             <div class="row">

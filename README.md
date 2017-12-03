@@ -1,4 +1,7 @@
 # OOP Create, Read, Update and Delete
+I don't own any picture. The credits go to the respective owners.
+If you are a copyright owner and want your work to be removed please contact us first through e-mail: emmanuelseete.2016@gmail.com we will delete these images immediately.
+
 Bootstrap Admin Template by [Creative Tim](https://www.creative-tim.com/)
 
 Still in development don't use this in production.
