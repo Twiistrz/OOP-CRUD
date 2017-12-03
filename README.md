@@ -3,22 +3,20 @@ Bootstrap Admin Template by [Creative Tim](https://www.creative-tim.com/)
 
 Still in development don't use this in production.
 
-A simple basic PHP OOP Create, Read, Update and Delete.
 Custom login and remember already included `classes/Users.php`.
-
-Default files `classes/Config.php`, `classes/Cookie.php`, `classes/Session.php`, `classes/Database.php`, `classes/Validate.php` you can create your own class by copying the class file template.
+Default files `classes/Config.php`, `classes/Cookie.php`, `classes/Session.php`, `classes/Database.php`, `classes/Validate.php` you can create your own class by copying the class file template
 
 # Tasks
-- [x] Login
-- [x] Register
-- [x] Create Data
-- [x] Update Data
-- [x] Select Data
-- [x] Delete Data
+- [ ] Login User
+- [ ] Register User
+- [ ] Create Data
+- [ ] Update Data
+- [ ] Select Data
+- [ ] Delete Data
 - [ ] Upload Images
 
 ## Global Configuration File
-You can find this configuration in `core/init.php`.
+You can find this configuration in `core/init.php`
 ```php
 // Global Configuration
 $GLOBALS['config'] = array
