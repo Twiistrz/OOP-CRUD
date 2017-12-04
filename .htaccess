@@ -1,6 +1,3 @@
-ErrorDocument 404 /404.php
-ErrorDocument 403 /403.php
-
 <IfModule mod_authz_core.c>
     Require all granted
 </IfModule>
@@ -21,6 +18,12 @@ ErrorDocument 403 /403.php
     Options -Indexes
     RewriteEngine on
 
+    ErrorDocument 404 http://localhost/oop-crud/404/
+    ErrorDocument 403 http://localhost/oop-crud/403/
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
     RewriteRule ^classes/(.*)?$ / [F,L]
     RewriteRule ^core/(.*)?$ / [F,L]
@@ -29,10 +32,14 @@ ErrorDocument 403 /403.php
 
     RewriteRule ^login(.*)$ login.php [QSA,L]
     RewriteRule ^register(.*)$ register.php [QSA,L]
+    RewriteRule ^home(.*)$ index.php [QSA,L]
+    RewriteRule ^help(.*)$ help.php [QSA,L]
+    RewriteRule ^users(.*)$ users.php [QSA,L]
+    RewriteRule ^logout(.*)$ logout.php [QSA,L]
+    RewriteRule ^settings(.*)$ settings.php [QSA,L]
 
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule !^assets index.php [QSA,L]
+    RewriteRule ^403(.*)$ 403.php [QSA,L]
+    RewriteRule ^404(.*)$ 404.php [QSA,L]
 </IfModule>
 
 <IfModule mod_deflate.c>

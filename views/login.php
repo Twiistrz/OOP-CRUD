@@ -9,12 +9,12 @@
                     </div>
                     <hr />
                     <div class="content">
-                        <form action="login.php" method="post">
+                        <form action="<?=$url;?>/login/" method="post">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="username">Username</label>
-                                        <input type="text" id="username" class="form-control" value="" placeholder="Username">
+                                        <input type="text" id="username" name="username" class="form-control" value="" placeholder="Username">
                                     </div>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="password">Password</label>
-                                        <input type="password" id="password" class="form-control" placeholder="Password">
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                                     </div>
                                 </div>
                             </div>
@@ -36,8 +36,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="hidden" name="token" value="<?=Token::generate();?>">
                             <button class="btn btn-info btn-fill btn-block" type="submit">Sign in</button>
-                            <a href="register.php" class="btn btn-primary btn-fill btn-block">Create New Account</a>
+                            <a href="<?=$url;?>/register/" class="btn btn-primary btn-fill btn-block">Create New Account</a>
                         </form>
                     </div>
                 </div>

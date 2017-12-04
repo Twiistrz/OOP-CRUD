@@ -18,11 +18,11 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="profile.php">Your Profile</a></li>
+                        <li><a href="profile/">Your Profile</a></li>
                         <li class="divider"></li>
-                        <li><a href="help.php">Help</a></li>
-                        <li><a href="settings.php">Settings</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="help/">Help</a></li>
+                        <li><a href="settings/">Settings</a></li>
+                        <li><a href="logout/">Logout</a></li>
                     </ul>
                 </li>
                 <li class="separator hidden-lg"></li>

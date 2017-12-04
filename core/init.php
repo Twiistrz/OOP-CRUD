@@ -62,4 +62,5 @@ else {
 }
 
 $filename = basename($_SERVER['PHP_SELF'], '.php');
+$url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://{$_SERVER['HTTP_HOST']}/oop-crud";
 $user = new User();
