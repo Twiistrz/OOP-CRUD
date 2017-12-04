@@ -6,7 +6,7 @@ Bootstrap Admin Template by [Creative Tim](https://www.creative-tim.com/)
 
 Still in development don't use this in production.
 
-Custom login and remember already included `classes/Users.php`.
+Custom login with remember me already included `classes/Users.php`.
 
 # Tasks
 - [ ] Login User
