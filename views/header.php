@@ -17,7 +17,8 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
     <link href="<?=$url;?>/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <style type="text/css">
-        body.login-register {
+        body.login-register,
+        body.error-page {
             background: url('<?=$url;?>/assets/img/bg.jpg'), #777;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -28,10 +29,19 @@
             -moz-background-size: cover;
             -webkit-background-size: cover;
         }
-        .wrapper.login-register { padding-top: 150px; }
-        .wrapper.login-register .content > .row:first-child { margin: 0; }
-        .wrapper.login-register .copyright.text-gray { color: #ccc; }
+        .wrapper.login-register,
+        .wrapper.error-page { padding-top: 150px; }
+        .wrapper.login-register .content > .row:first-child,
+        .wrapper.error-page .content > .row:first-child { margin: 0; }
+        .wrapper.login-register .copyright.text-gray,
+        .wrapper.error-page .copyright.text-gray { color: #ccc; }
     </style>
 </head>
 
-<body <?php if (!$user->isLoggedIn()) echo 'class="login-register"';?>>
+<body class="<?php
+    if ($filename == '404' || $filename == '403') {
+        echo 'error-page';
+    } else {
+        if (!$user->isLoggedIn()) echo 'login-register';
+    }
+?>">

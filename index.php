@@ -33,9 +33,7 @@ if (!$user->isLoggedIn()) {
                             </div>
                             <div class="content">
                                 <div class="typo-line">
-                                    <p>
-                                        {{ Introduction Description }}
-                                    </p>
+                                    <p>{{ Introduction Description }}</p>
                                 </div>
                             </div>
                         </div>
