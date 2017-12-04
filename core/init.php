@@ -64,3 +64,4 @@ else
 }
 
 $filename = basename($_SERVER['PHP_SELF'], '.php');
+$user = new User();

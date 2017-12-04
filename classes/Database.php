@@ -32,7 +32,7 @@ class Database
     {
         $this->_error = false;
         if ($this->_query = $this->_pdo->prepare($stmt)) {
-            if (count($params) {
+            if (count($params)) {
                 $count = 1;
                 foreach ($params as $param) {
                     $this->_query->bindValue($count, $param);

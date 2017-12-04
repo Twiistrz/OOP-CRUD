@@ -102,7 +102,7 @@ class User
     public function delete($value = null)
     {
         if ($value) {
-            if (!$this->_db->delete($this->_tblName), array($this->_tblRowId, '=', $value)) throw new Exception($this->errDelete, 1);
+            if (!$this->_db->delete($this->_tblName, array($this->_tblRowId, '=', $value))) throw new Exception($this->errDelete, 1);
         }
     }
 
