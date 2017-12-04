@@ -42,6 +42,7 @@ require_once 'views/header.php';
 
                             </div><!-- ./row -->
                             <button class="btn btn-info btn-fill btn-block" type="submit">Register</button>
+                            <a href="<?=$url;?>/login/" class="btn btn-info btn-block">Already have an account? Login</a>
                             <div class="clearfix"></div>
                         </form>
                     </div><!-- ./content -->
