@@ -9,16 +9,16 @@
     <meta name="author" content="Emmanuel See Te">
     <meta name="description" content="Simple PHP OOP CRUD with User Authentication.">
 	<title>PHP OOP CRUD</title>
-    <link rel="icon" type="image/jpg" href="assets/img/logo.jpg">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/animate.min.css" rel="stylesheet"/>
-    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+    <link rel="icon" type="image/jpg" href="http://localhost/oop-crud/assets/img/logo.jpg">
+    <link href="http://localhost/oop-crud/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost/oop-crud/assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="http://localhost/oop-crud/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="http://localhost/oop-crud/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <style type="text/css">
         html, body {
-            background: url('assets/img/bg.jpg'), #777;
+            background: url('http://localhost/oop-crud/assets/img/bg.jpg'), #777;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center center;

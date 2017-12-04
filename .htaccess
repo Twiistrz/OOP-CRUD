@@ -1,3 +1,6 @@
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
 <IfModule mod_authz_core.c>
     Require all granted
 </IfModule>
@@ -14,6 +17,8 @@
 </IfModule>
 
 <IfModule mod_rewrite.c>
+    Options -MultiViews
+    Options -Indexes
     RewriteEngine on
 
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -21,15 +26,13 @@
     RewriteRule ^core/(.*)?$ / [F,L]
     RewriteRule ^views/(.*)?$ / [F,L]
     RewriteRule /\.git / [F,L]
+
     RewriteRule ^login(.*)$ login.php [QSA,L]
     RewriteRule ^register(.*)$ register.php [QSA,L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule !^assets index.php [QSA,L]
-
-    Options -MultiViews
-    Options -Indexes
 </IfModule>
 
 <IfModule mod_deflate.c>
