@@ -8,8 +8,6 @@ Still in development don't use this in production.
 
 Custom login and remember already included `classes/Users.php`.
 
-Default files `classes/Config.php`, `classes/Cookie.php`, `classes/Session.php`, `classes/Database.php`, `classes/Validate.php` you can create your own class by copying the class file template
-
 # Tasks
 - [ ] Login User
 - [ ] Register User
