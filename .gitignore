@@ -4,7 +4,6 @@
 robots.txt
 assets/css/demo.css
 assets/js/demo.js
-assets/sass/*
 assets/img/loading-bubbles.svg
 classes/Template.php
 
