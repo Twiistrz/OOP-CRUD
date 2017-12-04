@@ -2,7 +2,7 @@
 require_once 'core/init.php';
 require_once 'views/header.php';
 ?>
-<div class="wrapper">
+<div class="wrapper login-register">
     <div class="content">
         <div class="row">
 

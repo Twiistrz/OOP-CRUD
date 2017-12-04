@@ -63,7 +63,3 @@ else {
 
 $filename = basename($_SERVER['PHP_SELF'], '.php');
 $user = new User();
-
-// if ($filename != 'login' && $filename != 'register') {
-//     ($user->isLoggedIn()) ? Redirect::to('index') : Redirect::to('login') ;
-// }

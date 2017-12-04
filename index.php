@@ -1,6 +1,12 @@
 <?php
 require_once 'core/init.php';
 require_once 'views/header.php';
+
+if (!$user->isLoggedIn()) {
+    require_once 'views/login.php';
+    require_once 'views/footer.php';
+    exit();
+}
 ?>
 <div class="wrapper">
     <?php require_once 'views/sidebar.php';?>

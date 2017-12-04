@@ -16,7 +16,6 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    <?php if ($filename === 'register' || $filename === 'login') { ?>
     <style type="text/css">
         html, body {
             background: url('assets/img/bg.jpg'), #777;
@@ -29,11 +28,10 @@
             -moz-background-size: cover;
             -webkit-background-size: cover;
         }
-        .wrapper { padding-top: 150px; }
-        .wrapper .content > .row:first-child { margin: 0; }
-        .copyright.text-gray { color: #ccc; }
+        .wrapper.login-register { padding-top: 150px; }
+        .wrapper.login-register .content > .row:first-child { margin: 0; }
+        .wrapper.login-register .copyright.text-gray { color: #ccc; }
     </style>
-    <?php } ?>
 </head>
 
 <body>
