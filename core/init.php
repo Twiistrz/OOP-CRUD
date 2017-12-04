@@ -48,8 +48,7 @@ spl_autoload_register
     }
 );
 
-if (Config::get('development/debug'))
-{
+if (Config::get('development/debug')) {
     // Debug you can add your own file log here.
     ini_set ('error_prepend_string', "<code>");
     ini_set ('error_append_string', "</code>");
@@ -58,10 +57,13 @@ if (Config::get('development/debug'))
     error_reporting (E_ALL);
 }
 
-else
-{
+else {
     error_reporting (0);
 }
 
 $filename = basename($_SERVER['PHP_SELF'], '.php');
 $user = new User();
+
+// if ($filename != 'login' && $filename != 'register') {
+//     ($user->isLoggedIn()) ? Redirect::to('index') : Redirect::to('login') ;
+// }

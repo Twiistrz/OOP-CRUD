@@ -127,4 +127,9 @@ class User
     {
         return $this->_count;
     }
+
+    public function isLoggedIn()
+    {
+        return $this->_isLoggedIn;
+    }
 }

@@ -1,0 +1,8 @@
+ErrorDocument 404 http://localhost/oop-crud/404.php
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/404/$
+RewriteRule ^(.*)$ /404.php [L]
