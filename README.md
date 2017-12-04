@@ -28,6 +28,7 @@ $GLOBALS['config'] = array
         // Set this true if you want to display errors.
         'debug' => true
     ),
+
     'mysql' => array
     (
         // Database Host
@@ -39,6 +40,7 @@ $GLOBALS['config'] = array
         // Database Name
         'name' => 'crud'
     ),
+
     'remember' => array
     (
         // Remember me cookie name.
@@ -46,6 +48,7 @@ $GLOBALS['config'] = array
         // Cookie expiration in seconds.
         'cookie_expiry' => 604800
     ),
+
     'session' => array
     (
         // Login session name.
